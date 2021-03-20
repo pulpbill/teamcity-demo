@@ -1,13 +1,17 @@
 ### Connect to shipa target
 `shipa target-add shipa $SHIPA_HOST -s`
+
 `shipa login nn@nn.com`
 
 ### User Role Permission
 
 #### list command 
 `shipa node-list`
+
 `shipa role-list`
+
 `shipa user-list`
+
 `shipa permission-list`
 
 #### show users with their roles
@@ -21,6 +25,7 @@
 
 #### Assign the role to a user and user to team "shipa-dev-team"
 `shipa role-assign developer developer@nn.com shipa-dev-team`
+
 `shipa user-list`
 
 #### remove role 
