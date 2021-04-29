@@ -19,5 +19,5 @@
     -v /usr/local/bin/docker:/usr/bin/docker \
     -d jetbrains/teamcity-agent
 
-### NOTE: for docker mount to work and docker commands to be executable inside the container, you need to set less stricter permission on docker on the host with the following command
+##### NOTE: for docker mount to work and docker commands to be executable inside the container, you need to set less stricter permission on docker on the host with the following command
     chmod 666 /var/run/docker.sock
