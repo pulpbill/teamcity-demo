@@ -7,13 +7,13 @@
 
 
 ## start TeamCity agent without docker volume mount
-    docker run -it -e SERVER_URL="http://public-ip:8111"  \
+    docker run -e SERVER_URL="http://public-ip:8111"  \
     -v team_city_agent_config:/data/teamcity_agent/conf  \
     -d jetbrains/teamcity-agent
 
 
 ## start TeamCity agent with docker volume mount
-    docker run -it -e SERVER_URL="http://public-ip:8111"  \
+    docker run -e SERVER_URL="http://public-ip:8111"  \
     -v team_city_agent_config_two:/data/teamcity_agent/conf  \
     -v /var/run/docker.sock:/var/run/docker.sock \
     -v /usr/local/bin/docker:/usr/bin/docker \
